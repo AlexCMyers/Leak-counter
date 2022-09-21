@@ -7,9 +7,9 @@ Memory leak tools are important in languages like C and C++ where memory managem
 This library demonstrates data structure management and understanding of lower level processes
 
 
-Compile:
+Compile: make
 
-Use:
+Use: LD_PRELOAD=
 
 Test programs included:
 
