@@ -1,15 +1,13 @@
 # Leak-counter
-A memory leak detector/counter implemented via a shim that intercepts calls to malloc and free
+A memory leak detector/counter that intercepts calls to malloc and free, determining if memory has been cleared correctly
 
 Memory leak tools are important in languages like C and C++ where memory management is done primarily by the developer
 (as opposed to Java where it's handled automatically by the JVM)
 
-This library demonstrates data structure management and understanding of lower level processes
-
 
 Compile: make
 
-Use: LD_PRELOAD=
+Use: ./leakcount [.exe] [arg0] [arg1] [...]
 
-Test programs included:
-
+Test programs included: `test` (is compiled with `make` command)
+`make test` will run `./leakcount test`
